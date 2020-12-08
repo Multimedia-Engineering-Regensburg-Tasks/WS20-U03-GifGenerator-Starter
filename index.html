@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GifGenerator</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+</head>
+
+<body>
+<header>
+    <span class="title">Gif Generator</span>
+    <span class="button create-gif ">Create Gif</span>
+</header>
+<main>
+    <div class="out">
+        <div class="output video-box playing">
+            <span class="button create-frame">Get Frame</span>
+            <p class="video-prompt hidden">Drag video here...</p>
+            <!-- Video-Element zur Ausgabe des importierten Videos -->
+            <video class="video" controls="true" height="360" width="480">
+                <source src="videos/HarmonicAirshow.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="output gif-box">
+            <span class="hint">Das erstellte GIF wird hier angezeigt</span>
+            <!-- Element zur Ausgabe des erstellten GIFs in einem img-Container -->
+        </div>
+    </div>
+    <div class="frames-box">
+        <canvas class="canvas hidden" width="480" height="360"></canvas>
+        <ul class="frames">
+
+        </ul>
+    </div>
+</main>
+<template id="frame">
+    <li draggable="true">
+        <img height="" width="" frame="" src="">
+        <span class="button delete-frame">Entfernen</span>
+    </li>
+</template>
+<script src="vendors/gifjs/gif.js"></script>
+<script type="module" src="resources/js/app.js"></script>
+</body>
+
+</html>
