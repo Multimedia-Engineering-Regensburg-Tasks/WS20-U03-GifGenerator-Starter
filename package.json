@@ -1,0 +1,23 @@
+{
+  "name": "mme-ws1920-task-2-gifgenerator-starter",
+  "version": "1.0.0",
+  "description": "An interactive browser based gif generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server . -o -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Multimedia-Engineering-Regensburg-Tasks/WS20-U03-GifCreator-Starter"
+  },
+  "author": "Alexander Bazo <alexander.bazo@ur.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Multimedia-Engineering-Regensburg-Tasks/WS20-U03-GifCreator-Starter/issues"
+  },
+  "homepage": "https://github.com/Multimedia-Engineering-Regensburg-Tasks/WS20-U03-GifCreator-Starter#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
